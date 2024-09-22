@@ -62,7 +62,7 @@ RL_hyperparams = {
     "discount_factor": 0.99,
     "batch_size": 32,
     "update_frequency": 10,
-    "max_episodes": 600,
+    "max_episodes": 600 if train_mode else 5,
     "epsilon_max": 0.999,
     "epsilon_min": 0.01,
     "epsilon_decay": 0.996,
